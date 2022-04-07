@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Beau+Rivage&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+  --write: #fff;
+  --black: #000;
+  --yellow: #F2B705;
+  --yellowLight: #f3cf639d;
+  --blue: #034C8C;
+  --red: #A62F03;
+  --font-title: 'Anton', sans-serif;
+  --font-lists: 'Beau Rivage', cursive;
+  --font-text: 'Libre Baskerville', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
