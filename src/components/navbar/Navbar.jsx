@@ -1,17 +1,28 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import StyleNavbar from "./StyleNavbar";
 
 const Navbar = (props) => {
-   return (     
+   return (
       <StyleNavbar>
-         <ul>
-            <li>{props.item1}</li>
-            <li>{props.item2}</li>
-            <li className="title">ResiliaDrinks</li>
-            <li>{props.item3}</li>
-            <li>{props.item4}</li>
-         </ul>
-      </StyleNavbar>             
+            <ul>
+               <NavLink to="/drinks">
+                  <li>{props.item1}</li>
+               </NavLink>
+               <NavLink to="/sobre">
+                  <li>{props.item2}</li>
+               </NavLink>
+               <NavLink to="/">
+               <li className="title">ResiliaDrinks</li>
+               </NavLink>
+               <NavLink to="/time">
+                  <li>{props.item3}</li>
+               </NavLink>
+               <NavLink to="/contato">
+                  <li>{props.item4}</li>
+               </NavLink>
+            </ul>
+      </StyleNavbar>
    );
 };
 
