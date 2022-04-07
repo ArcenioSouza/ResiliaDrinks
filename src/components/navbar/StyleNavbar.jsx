@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const StyleNavbar = styled.div`
-   width: 100%;
-   height: 100px;
-   background-color: papayawhip;
+   height: 100%;
+   background-color: var(--yellow);
    display: flex;
    justify-content: space-around;
    align-items: center;
+   box-shadow: 0px 5px 15px #000;
 
    ul {
       width: 90%;
@@ -19,26 +19,33 @@ const StyleNavbar = styled.div`
 
    .title {
       font-size: 40px;
+      font-family: var(--font-title);
    }
 
    .title:hover {
       text-decoration: none;
-      color: orange;
+      color: var(--red);
       cursor: pointer;
    }
 
    li {
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-family: var(--font-links);
+      color: var(--blue);
+      font-weight: bold;
+   }
+
+   a{
+      color: none;
+      cursor: none;
+      text-decoration: none;
    }
 
    li:hover {
-      color: orange;
+      color: var(--red);
       cursor: pointer;
    }
 
    li:active {
-      color: red;
       text-decoration: underline;
    }
 `;
