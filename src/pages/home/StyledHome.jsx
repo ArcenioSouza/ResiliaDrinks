@@ -4,7 +4,7 @@ const Container = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 80%;
   width: 100%;
 
   h1{
@@ -14,7 +14,7 @@ const Container = styled.main`
     top: 150px;
     text-shadow: 5px 5px 5px var(--blue);
     color: var(--write);
-    font-family: var(--font-title)
+    font-family: var(--font-lists)
   }
 
   img{

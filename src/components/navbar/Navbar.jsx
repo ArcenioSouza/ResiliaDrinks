@@ -8,19 +8,19 @@ const Navbar = (props) => {
          <nav>
             <ul>
                <NavLink to="/drinks">
-                  <li>{props.item1}</li>
+                  {props.item1}
                </NavLink>
                <NavLink to="/sobre">
-                  <li>{props.item2}</li>
+                  {props.item2}
                </NavLink>
-               <NavLink to="/">
-                  <li className="title">ResiliaDrinks</li>
+               <NavLink to="/" id='title'>
+                  ResiliaDrinks
                </NavLink>
                <NavLink to="/time">
-                  <li>{props.item3}</li>
+                  {props.item3}
                </NavLink>
                <NavLink to="/contato">
-                  <li>{props.item4}</li>
+                  {props.item4}
                </NavLink>
             </ul>
          </nav>

@@ -23,36 +23,32 @@ const StyleNavbar = styled.header`
       font: 25px bold;
    }
 
-   .title {
-      font-size: 40px;
+   #title {
+      font-size: 4rem;
       font-family: var(--font-title);
    }
 
-   .title:hover {
+   #title:hover {
       text-decoration: none;
       color: var(--red);
-      cursor: pointer;
    }
 
-   li {
-      font-family: var(--font-links);
+   a {
+      font-family: var(--font-lists);
       color: var(--blue);
       font-weight: bold;
-   }
-
-   a{
-      color: none;
-      cursor: none;
       text-decoration: none;
+      font-size: 1.5rem;
    }
 
-   li:hover {
+   .active {
+      color: var(--red);
+      text-shadow: 2px 2px 10px var(--write);
+   }
+
+   a:hover {
       color: var(--red);
       cursor: pointer;
-   }
-
-   li:active {
-      text-decoration: underline;
    }
 `;
 export default StyleNavbar;
