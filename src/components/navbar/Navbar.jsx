@@ -5,6 +5,7 @@ import StyleNavbar from "./StyleNavbar";
 const Navbar = (props) => {
    return (
       <StyleNavbar>
+         <nav>
             <ul>
                <NavLink to="/drinks">
                   <li>{props.item1}</li>
@@ -13,7 +14,7 @@ const Navbar = (props) => {
                   <li>{props.item2}</li>
                </NavLink>
                <NavLink to="/">
-               <li className="title">ResiliaDrinks</li>
+                  <li className="title">ResiliaDrinks</li>
                </NavLink>
                <NavLink to="/time">
                   <li>{props.item3}</li>
@@ -22,6 +23,7 @@ const Navbar = (props) => {
                   <li>{props.item4}</li>
                </NavLink>
             </ul>
+         </nav>
       </StyleNavbar>
    );
 };

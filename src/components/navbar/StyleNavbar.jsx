@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
-const StyleNavbar = styled.div`
-   height: 100%;
+const StyleNavbar = styled.header`
+   height: 10%;
    background-color: var(--yellow);
    display: flex;
    justify-content: space-around;
    align-items: center;
    box-shadow: 0px 5px 15px #000;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+
+   nav {
+      width: 100%;
+   }
 
    ul {
       width: 90%;

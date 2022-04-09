@@ -4,7 +4,7 @@
   --write: #fff;
   --black: #000;
   --yellow: #F2B705;
-  --yellowLight: #f3cf639d;
+  --yellowLight: #fff0c2ef;
   --blue: #034C8C;
   --red: #A62F03;
   --font-title: 'Anton', sans-serif;
@@ -16,5 +16,14 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--yellowLight);
 }
 

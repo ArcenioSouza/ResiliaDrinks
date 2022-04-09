@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
+const Container = styled.main`
   display: flex;
-  position: relative;
   justify-content: center;
-  width: 100%;
+  align-items: center;
   height: 100%;
+  width: 100%;
 
   h1{
+    position: absolute;
     z-index: 1;
     font-size: 5rem;
+    top: 150px;
     text-shadow: 5px 5px 5px var(--blue);
     color: var(--write);
     font-family: var(--font-title)
@@ -19,9 +21,8 @@ const Container = styled.div`
     width: 80%;
     height: 95%;
     background-repeat: no-repeat;
-    position: absolute;
     z-index: 0;
-    top: 15px;
+    border-radius: 30px;
   }  
 `
 
